@@ -1,0 +1,45 @@
+.card {
+	width: 373px;
+	height: auto;
+	padding: 0;
+	margin: 100px auto;
+	padding: 20px 20px 9px;
+}
+.button {
+	overflow: hidden;
+}
+.button {
+	position: relative;
+	top: 0;
+
+	cursor: pointer;
+
+	width: 66px;
+	height: 36px;
+
+	margin: 0 7px 11px 0;
+
+	line-height: 36px;
+	user-select: none;	
+}
+
+.button-assertive {
+	margin-right: 0;
+
+}
+.button-energized {
+	float: left;
+}
+.item-input {
+	width: 70%;
+	margin: 0 7px 11px 0;
+	float: left;
+}
+
+input {
+	text-overflow: ellipsis;
+}
+
+input [disabled] {
+	background: #ffffff;
+}

@@ -1,0 +1,6 @@
+{
+    "jscodehints.detectedExclusions": [
+        "/Users/amitg/practice/mobile/ionic/smenuProject/smenuProject/platforms/ios/build/emulator/smenuProject.app/www/plugins/org.apache.cordova.device/www/device.js",
+        "/Users/amitg/practice/mobile/ionic/smenuProject/smenuProject/platforms/ios/build/emulator/smenuProject.app/www/lib/ionic/js/angular-ui/angular-ui-router.min.js"
+    ]
+}

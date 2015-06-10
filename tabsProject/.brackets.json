@@ -1,0 +1,6 @@
+{
+    "jscodehints.detectedExclusions": [
+        "/Users/amitg/practice/mobile/ionic/tabsProject/www/lib/ionic/js/ionic.min.js",
+        "/Users/amitg/practice/mobile/ionic/tabsProject/platforms/ios/www/plugins/org.apache.cordova.device/www/device.js"
+    ]
+}

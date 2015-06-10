@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet"> 
+
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+
+    <!-- your app's js -->
+    <script src="js/app.js"></script>
+    <script src="js/controllers.js"></script>
+  </head>
+  <body ng-app="calculator">
+    <ion-pane>
+      <ion-header-bar class="bar-stable">
+        <h1 class="title">Calculate</h1>
+      </ion-header-bar>
+      <ion-content>
+      <div class="card">
+        <div class="item item-text-wrap">
+  <!-- Screen and clear key -->
+          <div class="calculator">
+            <div class="top" ng-controller="keysCtrl">
+            <button class="button button-energized" ng-click="bttnClear()">C</button>
+              <label class="item item-input">
+                <span class="input-label" ng-model="screenValue">{{screenValue}}</span>
+                <input type="text">
+              </label>
+            <div class="keys">
+              <!-- operators and other keys -->
+              <button class="button button-positive" ng-click="bttnSeven()">7</button>
+              <button class="button button-positive" ng-click="bttnEight()">8</button>
+              <button class="button button-positive" ng-click="bttnNine()">9</button>
+              <button class="button button-assertive" ng-click="bttnAdd()">+</button>
+              <button class="button button-positive" ng-click="bttnFour()">4</button>
+              <button class="button button-positive" ng-click="bttnFive()">5</button>
+              <button class="button button-positive" ng-click="bttnSix()">6</button>
+              <button class="button button-assertive" ng-click="bttnMinus()">-</button>
+              <button class="button button-positive" ng-click="bttnOne()">1</button>
+              <button class="button button-positive" ng-click="bttnTwo()">2</button>
+              <button class="button button-positive" ng-click="bttnThree()">3</button>
+              <button class="button button-assertive" ng-click="bttnDivide()">÷</button>
+              <button class="button button-positive" ng-click="bttnZero()">0</button>
+              <button class="button" ng-click="bttnDecimal()">.</button>
+              <button class="button button-balanced" ng-click="bttnEval()">=</button>
+              <button class="button button-assertive" ng-click="bttnMultiply()">x</button>
+            </div>
+        </div>
+      </div>
+      </ion-content>
+    </ion-pane>
+  </body>
+</html>

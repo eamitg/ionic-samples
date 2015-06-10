@@ -1,0 +1,70 @@
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+        <title></title>
+
+        <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+
+        <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+        <link href="css/ionic.app.css" rel="stylesheet">
+        -->
+
+        <!-- ionic/angularjs js -->
+        <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+        <!-- cordova script (this will be a 404 during development) -->
+        <script src="cordova.js"></script>
+
+        <!-- your app's js -->
+        <script src="js/app.js"></script>
+      </head>
+      <body ng-app="starter">
+
+        <ion-pane>
+          <ion-header-bar class="bar-dark top-header">
+            <h1 class="title">Mortgage Calculator</h1>
+          </ion-header-bar>            
+          <ion-content scroll="false">
+            <div class="list">
+                <div class="item item-divider round-button"></div>
+              <div class="item range range-positive">
+                <label class="item-input-wrapper">
+                  <input type="text" placeholder="100000">
+                </label>
+                <i class="icon ion-minus"></i>
+                <input type="range" name="volume" min="100000" max="1000000" value="300000">
+                <i class="icon ion-plus"></i>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mortgage Amount
+              </div>
+                <div class="item item-divider"></div>
+              <div class="item range range-positive">
+                <label class="item-input-wrapper">
+                  <input type="text" placeholder="7">
+                </label>
+                <i class="icon ion-minus"></i>
+                <input type="range" name="volume" min="3" max="20" value="12">
+                <i class="icon ion-plus"></i>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tenure
+              </div>
+                <div class="item item-divider"></div>
+              <div class="item range range-positive">
+                <label class="item-input-wrapper">
+                  <input type="text" placeholder="10.4">
+                </label>
+                <i class="icon ion-minus"></i>
+                <input type="range" name="volume" min="0.0" max="100.00" value="10.4">
+                <i class="icon ion-plus"></i>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rate of Interest
+              </div>
+                <div class="item item-divider"></div>
+            </div>
+            </ion-content>
+          <div class="bar bar-footer bar-dark">
+              <div class="title">&copy; 2015 All Rights Reserved</div>
+          </div>
+        </ion-pane>
+      </body>
+    </html>

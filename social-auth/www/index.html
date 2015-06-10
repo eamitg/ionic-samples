@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+
+	<!-- Firebase -->
+<script src="lib/firebase/firebase.js"></script>
+	<!-- Firebase Simple Login -->
+<script src="lib/firebase/firebase-simple-login.js"></script>
+	<!-- AngularFire -->
+<script src="lib/firebase/angularfire.js"></script>
+    <!-- your app's js -->
+    <script src="js/app.js"></script>
+  </head>
+  <body ng-app="starter">
+
+    <ion-pane>
+      <ion-header-bar class="bar-stable">
+        <h1 class="title">Ionic Blank Starter</h1>
+      </ion-header-bar>
+<ion-view title="Login" >
+    <ion-content has-header="true" padding="true" class="login">
+
+        <a class="btn-auth btn-facebook large" ng-click="login('facebook')">
+            Sign in with <b>Facebook</b>
+        </a>
+        <a class="btn-auth btn-twitter large" ng-click="login('twitter')">
+            Sign in with <b>Twitter</b>
+        </a>
+
+    </ion-content>
+</ion-view>
+    </ion-pane>
+  </body>
+</html>
